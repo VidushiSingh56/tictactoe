@@ -1,0 +1,97 @@
+
+.mygame {
+    margin: 0; /* Correct the margin property */
+    position: relative;
+    padding: 0.5vw;
+    box-sizing: border-box; /* Include padding in the element's total width */
+
+    width: 100%;
+    max-width: 100vw; /* Ensure the width doesn't exceed the viewport width */
+    height: 4vw;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 2vw;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.container {
+    height: 33vw;
+    width: 33vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* border: black solid 0.1vw; */
+    border: black solid 0.1vw;
+    /* border-left: 0; */
+    width: 10.9vw;
+    height: 10.9vw;
+}
+
+.box span {
+    color: black;
+    position: relative;
+    /* display: inline; */
+    font-size: 7vw;
+    /* padding: 3.2vw 3.2vw; */
+    top: 1vw;
+    left: 3vw;
+}
+.box:hover{
+background-color: rgb(69, 131, 239);
+
+}
+.bl {
+    border-left: 0;
+}
+
+.br {
+    border-right: 0;
+}
+
+.bt {
+    border-top: 0;
+}
+
+.bb {
+    border-bottom: 0;
+}
+.image img{
+    position: absolute;
+    left: 60.4vw;
+    /* font-size: 0vw; */
+    top: 19vw;
+    width: 0;
+    transition: 1s ease-in-out;
+
+}
+.info {
+    position: absolute;
+    color: black;
+    font-size: 2vw;
+    top: 8vw;
+    left: 60vw;
+}
+#resetButton{
+    background-color: #0505c1;
+    position: absolute;
+    left: 60.3vw;
+    top: 12vw;
+    color: #fbfbfb;
+    /* margin: auto auto; */
+    font-size: 2vw;
+    border-radius: 10px;
+    font-family: system-ui;
+    box-shadow: 0;
+    padding: 9px 21px;
+
+}
+#resetButton:hover{
+    cursor: pointer;
+}
